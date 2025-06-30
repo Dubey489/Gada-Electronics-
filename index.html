@@ -61,11 +61,17 @@
 <!-- Contact Us Section -->
 <section style="background:#f9f9f9; padding: 30px 20px; margin: 30px auto; max-width: 800px; border-radius: 8px;">
   <h2 style="text-align:center;">Contact Us</h2>
-  <form style="display: flex; flex-direction: column; max-width: 500px; margin: auto;">
-    <input type="text" placeholder="Your Name" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
-    <input type="email" placeholder="Your Email" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
-    <textarea placeholder="Your Message" rows="4" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;"></textarea>
-    <button type="submit" style="background:#007bff; color:white; padding: 10px; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
+  <form action="https://formsubmit.co/your-avinashdubey163.com" method="POST" style="display: flex; flex-direction: column; max-width: 500px; margin: auto;">
+  <!-- Disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Success redirect (optional) -->
+  <input type="hidden" name="_next" value="https://dubey489.github.io/thankyou.html">
+
+  <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+  <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+  <textarea name="message" placeholder="Your Message" rows="4" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+  <button type="submit" style="background:#007bff; color:white; padding: 10px; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
   </form>
 </section>
 </body>
