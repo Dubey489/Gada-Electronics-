@@ -4,7 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gada Electronics</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      padding-bottom: 40px;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 220px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      color: #007bff;
+      font-size: 18px;
+    }
+    .card button {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #0056b3;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 30px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+    form input, form textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background:#007bff;
+      color:white;
+      padding: 10px;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,63 +99,60 @@
 
   <div class="products">
     <div class="card">
-      <img src="smartphone.jpg" alt="Smartphone X1">
+      <img src="https://i.imgur.com/NHYsI6x.jpg" alt="Smartphone X1">
       <h3>Smartphone X1</h3>
-      <p>₹19,999</p>
+      <p>₹29,999</p>
       <button>Enquire Now</button>
     </div>
 
     <div class="card">
-      <img src="laptop.jpg" alt="Laptop Pro 15">
+      <img src="https://i.imgur.com/4HKxJXt.jpg" alt="Laptop Pro 15">
       <h3>Laptop Pro 15"</h3>
       <p>₹79,999</p>
       <button>Enquire Now</button>
     </div>
 
     <div class="card">
-      <img src="headphones.jpg" alt="Wireless Headphones">
+      <img src="https://i.imgur.com/DWX6kNd.jpg" alt="Wireless Headphones">
       <h3>Wireless Headphones</h3>
       <p>₹9,999</p>
       <button>Enquire Now</button>
     </div>
 
     <div class="card">
-      <img src="refrigerator.jpg" alt="Refrigerator 300L">
+      <img src="https://i.imgur.com/9PiIXFe.jpg" alt="Refrigerator 300L">
       <h3>Refrigerator 300L</h3>
       <p>₹19,499</p>
       <button>Enquire Now</button>
     </div>
 
     <div class="card">
-      <img src="tv.jpg" alt="Smart TV 50-inch">
+      <img src="https://i.imgur.com/N4VrFJw.jpg" alt="Smart TV 50-inch">
       <h3>Smart TV 50"</h3>
       <p>₹34,999</p>
       <button>Enquire Now</button>
     </div>
   </div>
-  <!-- About Us Section -->
-<section style="background:#fff; padding: 30px 20px; margin: 30px auto; max-width: 800px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-  <h2 style="text-align:center;">About Us</h2>
-  <p style="font-size: 16px; line-height: 1.6; text-align: center;">
-    At <strong>Gada Electronics</strong>, we specialize in offering top-quality electronic gadgets and home appliances at unbeatable prices. Whether you're looking for the latest smartphones, powerful laptops, or energy-efficient refrigerators, we’ve got something for every need. Trusted by thousands of happy customers since 2010.
-  </p>
-</section>
 
-<!-- Contact Us Section -->
-<section style="background:#f9f9f9; padding: 30px 20px; margin: 30px auto; max-width: 800px; border-radius: 8px;">
-  <h2 style="text-align:center;">Contact Us</h2>
-  <form action="https://formsubmit.co/your-avinashdubey163.com" method="POST" style="display: flex; flex-direction: column; max-width: 500px; margin: auto;">
-  <!-- Disable CAPTCHA -->
-  <input type="hidden" name="_captcha" value="false">
+  <!-- About Us -->
+  <section>
+    <h2>About Us</h2>
+    <p style="font-size: 16px; line-height: 1.6; text-align: center;">
+      At <strong>Gada Electronics</strong>, we specialize in offering top-quality electronic gadgets and home appliances at unbeatable prices. Whether you're looking for the latest smartphones, powerful laptops, or energy-efficient refrigerators, we’ve got something for every need. Trusted by thousands of happy customers since 2010.
+    </p>
+  </section>
 
-  <!-- Success redirect (optional) -->
-  <input type="hidden" name="_next" value="https://dubey489.github.io/thankyou.html">
-
-  <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
-  <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
-  <textarea name="message" placeholder="Your Message" rows="4" required style="padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;"></textarea>
-  <button type="submit" style="background:#007bff; color:white; padding: 10px; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
-  </form>
-</section>
+  <!-- Contact Us -->
+  <section>
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <label>Upload an image (optional):</label>
+      <input type="file" name="attachment" accept="image/*">
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 </body>
 </html>
